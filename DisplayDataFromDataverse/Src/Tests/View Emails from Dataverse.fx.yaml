@@ -1,0 +1,18 @@
+"'f18cffb5-ac9e-4abb-8d68-69be94133bd5' As TestSuite":
+    Description: =""
+    DisplayName: ="View Emails from Dataverse"
+
+    "'a0e0a51c-f721-41ea-8f87-6f979efe1ae9' As TestCase":
+        Description: =""
+        DisplayName: ="Display Emails"
+
+        Step1 As TestStep:
+            Description: ="Assert(LblAppName1.Text = ""Display Emails Demo"")"
+            Screen: =Screen1
+            Value: =Assert(LblAppName1.Text = "Display Emails Demo", "Validate the text of the header for app name number 1 label.")
+
+        Step2 As TestStep:
+            Description: ="Assert(Sender_Column.FieldDisplayName = ""Email"")"
+            Screen: =Screen1
+            Value: =Assert(Sender_Column.FieldDisplayName = "Email", "Validate the display name of the sender email column name.")
+

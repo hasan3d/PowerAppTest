@@ -1,0 +1,92 @@
+{
+  "ComponentIndexes": {},
+  "ControlUniqueGuids": {},
+  "ControlUniqueIds": {
+    "a0e0a51c-f721-41ea-8f87-6f979efe1ae9": 11,
+    "App": 1,
+    "Canvas1": 6,
+    "DataCard1": 7,
+    "DataTable": 8,
+    "f18cffb5-ac9e-4abb-8d68-69be94133bd5": 10,
+    "LblAppName1": 5,
+    "RectQuickActionBar1": 4,
+    "Screen1": 3,
+    "Sender_Column": 9,
+    "Test_7F478737223C4B69": 2
+  },
+  "DoesTestStepsMetadataExist": true,
+  "FunctionParamsInvariantScripts": {},
+  "FunctionParamsInvariantScriptsOnInstances": {},
+  "HeaderLastSavedDateTimeUTC": "12/22/2022 17:40:40",
+  "IsLegacyComponentAllowGlobalScopeCase": false,
+  "LocalConnectionIDReferences": {},
+  "LocalDatabaseReferencesAsEmpty": false,
+  "LocalResourceFileNames": {},
+  "LocalResourceRootPaths": {},
+  "OrderComponentMetadata": {},
+  "OrderComponentTemplate": {},
+  "OrderDataSource": {
+    "CustomGallerySample": 3,
+    "Dataverse Emails": 4,
+    "Dataverse Emails\\default.cds_hatuk_dataverseemail_views": 2,
+    "Dataverse Emails\\hatuk_dataverseemail_statecode": 0,
+    "Dataverse Emails\\hatuk_dataverseemail_statuscode": 1
+  },
+  "OrderGroupControls": {},
+  "OrderPcfTemplate": {},
+  "OrderTemplate": {},
+  "OrderXMLTemplate": {
+    "fluidGrid": 2,
+    "label": 1,
+    "rectangle": 0
+  },
+  "OverridablePropertiesEntry": {
+    "a0e0a51c-f721-41ea-8f87-6f979efe1ae9": {},
+    "App": {},
+    "Canvas1": {},
+    "DataCard1": {},
+    "DataTable": {},
+    "f18cffb5-ac9e-4abb-8d68-69be94133bd5": {},
+    "LblAppName1": {},
+    "RectQuickActionBar1": {},
+    "Screen1": {},
+    "Sender_Column": {},
+    "Test_7F478737223C4B69": {}
+  },
+  "PCFDynamicSchemaForIRRetrievalEntry": {},
+  "PublishOrderIndices": {
+    "a0e0a51c-f721-41ea-8f87-6f979efe1ae9": 0,
+    "App": 0,
+    "Canvas1": 2,
+    "DataCard1": 3,
+    "DataTable": 4,
+    "f18cffb5-ac9e-4abb-8d68-69be94133bd5": 0,
+    "LblAppName1": 1,
+    "RectQuickActionBar1": 0,
+    "Screen1": 0,
+    "Sender_Column": 5,
+    "Test_7F478737223C4B69": 0
+  },
+  "ResourcesJsonIndices": {
+    "Image-SampleImage": 0
+  },
+  "RuleScreenIdWithoutScreen": {},
+  "TemplateVersions": {},
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.1365693,
+    "ControlCount": {
+      "dataCard": 1,
+      "dataTable": 1,
+      "dataTableColumn": 1,
+      "fluidGrid": 1,
+      "label": 1,
+      "rectangle": 1,
+      "screen": 1,
+      "TestCase": 1,
+      "TestSuite": 1
+    },
+    "DeserializationLoadTime": 0.8907152,
+    "ErrorCount": 0
+  },
+  "WasLocalDatabaseReferencesEmpty": false
+}

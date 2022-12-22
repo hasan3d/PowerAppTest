@@ -1,0 +1,100 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "hatuk_dataverseemails",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "hatuk_dataverseemail",
+    "MaxGetRowsCount": 500,
+    "Name": "Dataverse Emails",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "hatuk_content": "Content",
+      "hatuk_dataverseemail_AsyncOperations": "System Jobs",
+      "hatuk_dataverseemail_BulkDeleteFailures": "Bulk Delete Failures",
+      "hatuk_dataverseemail_DuplicateBaseRecord": "Duplicate Records (hatuk_dataverseemail_DuplicateBaseRecord)",
+      "hatuk_dataverseemail_DuplicateMatchingRecord": "Duplicate Records (hatuk_dataverseemail_DuplicateMatchingRecord)",
+      "hatuk_dataverseemail_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "hatuk_dataverseemail_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "hatuk_dataverseemail_ProcessSession": "Process Sessions",
+      "hatuk_dataverseemail_SyncErrors": "Sync Errors",
+      "hatuk_dataverseemailid": "Dataverse Email",
+      "hatuk_emailname": "Email Name",
+      "hatuk_sender": "Sender",
+      "hatuk_subject": "Subject",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Dataverse Emails",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Dataverse Emails (Views)",
+    "Name": "_hatuk_dataverseemail_views",
+    "RelatedEntityName": "Dataverse Emails",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "6d812f1d-775c-4de6-ae73-918029e42eba": "Active Dataverse Emails",
+      "847f7f9b-20dc-4559-8dd7-f307b98130c3": "Dataverse Email Lookup View",
+      "85d5c411-f5e9-4273-953e-40e710ba8873": "Dataverse Email Associated View",
+      "af9fdd97-fb43-4ff2-98bd-ed37e905224e": "Dataverse Email Advanced Find View",
+      "fd9b8aa3-2636-4c47-98c9-c28dcccfac11": "Inactive Dataverse Emails"
+    }
+  },
+  {
+    "DisplayName": "Status (Dataverse Emails)",
+    "Name": "hatuk_dataverseemail_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Dataverse Emails"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Dataverse Emails",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Dataverse Emails)",
+    "Name": "hatuk_dataverseemail_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Dataverse Emails"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Dataverse Emails",
+    "Type": "OptionSetInfo"
+  }
+]
