@@ -1,9 +1,59 @@
 "Screen1 As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+    OnVisible: =Set(varPageNumber,1)
 
     RectQuickActionBar1 As rectangle:
         Height: =88
         Width: =Parent.Width
         ZIndex: =1
+
+    "galMain As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
+        Height: =758
+        Items: |-
+            =If(
+            iconNext.DisplayMode = Disabled,
+            // Handling last set of records
+            LastN(
+            FirstN(
+            galHidden.AllItems,
+            drpPaginationSize.Selected.Value * varPageNumber
+            ),
+            drpPaginationSize.Selected.Value - (drpPaginationSize.Selected.Value * varPageNumber - CountRows(galHidden.AllItems))
+            ),
+            LastN(
+            FirstN(
+            galHidden.AllItems,
+            drpPaginationSize.Selected.Value * varPageNumber
+            ),
+            drpPaginationSize.Selected.Value
+            )
+            )
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =Min(96, Self.Height - 60)
+        Width: =625
+        Y: =214
+        ZIndex: =1
+
+        Title As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.'Email Name'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        Separator As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =3
 
     LblAppName1 As label:
         Align: =Align.Center
@@ -13,49 +63,99 @@
         Width: =Parent.Width
         ZIndex: =2
 
-    Canvas1 As fluidGrid.fluidGridWithBlankCard:
-        BorderThickness: =0
-        Height: =Parent.Height - Self.Y
-        Width: =Parent.Width
-        Y: =RectQuickActionBar1.Y + RectQuickActionBar1.Height
+    galHidden As gallery.galleryVertical:
+        Height: =47
+        Items: ='Dataverse Emails'
+        Layout: =Layout.Vertical
+        TemplateSize: =106
+        Visible: =false
+        Width: =226
+        X: =378
+        Y: =1068
         ZIndex: =3
 
-        DataCard1 As dataCard:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderStyle: =BorderStyle.Solid
-            BorderThickness: =0
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =Parent.Height - 100
-            Width: =Parent.Width
-            X: =0
-            Y: =0
-            ZIndex: =1
+    drpPaginationSize As dropdown:
+        Height: =52
+        Items: =[5,10]
+        Size: =21
+        Width: =178
+        Y: =114
+        ZIndex: =4
 
-            DataTable As dataTable.datatable:
-                BorderStyle: =BorderStyle.Solid
-                DisplayMode: =DisplayMode.Edit
-                Fill: =RGBA(0, 0, 0, 0)
-                HeadingSize: =21
-                Height: =500
-                Items: ='Dataverse Emails'
-                Size: =21
-                Width: =640
-                X: =0
-                Y: =40
-                ZIndex: =1
+    lblPageNumber As label:
+        Height: =93
+        Size: =21
+        Text: |-
+            ="Page " & varPageNumber & " of " & If(
+            Mod(
+            CountRows(galHidden.AllItems),
+            100
+            ) = 0,
+            RoundUp( CountRows(galHidden.AllItems) / drpPaginationSize.SelectedText.Value ,0) & "+ pages",
+            RoundUp( CountRows(galHidden.AllItems) / drpPaginationSize.SelectedText.Value,0) & " page(s)"
+            )
+        Width: =278
+        X: =164
+        Y: =1007
+        ZIndex: =5
 
-                Sender_Column As dataTableColumn.textualColumn:
-                    DisplayMode: =DisplayMode.Edit
-                    FieldDisplayName: ="Email"
-                    FieldName: ="hatuk_sender"
-                    FieldVariantName: ="textualColumn"
-                    Height: =Parent.Height
-                    LayoutHeight: =Parent.Height
-                    Order: =1
-                    Text: =ThisItem.Sender
-                    Width: =100
-                    X: =0
-                    Y: =0
-                    ZIndex: =2
+    iconPrev As icon.ArrowLeft:
+        DisplayMode: |-
+            =If(
+            varPageNumber = 1,
+            Disabled,
+            DisplayMode.Edit
+            )
+        Height: =83
+        Icon: =Icon.ArrowLeft
+        OnSelect: =Set(varPageNumber,varPageNumber-1)
+        Width: =147
+        X: =31
+        Y: =1012
+        ZIndex: =6
+
+    iconFirst As icon.ChevronLeft:
+        DisplayMode: |-
+            =If(
+            varPageNumber = 1,
+            Disabled,
+            DisplayMode.Edit
+            )
+        Height: =43
+        Icon: =Icon.ChevronLeft
+        OnSelect: =Set(varPageNumber,1)
+        Width: =65
+        Y: =1032
+        ZIndex: =7
+
+    iconNext As icon.ArrowRight:
+        DisplayMode: |-
+            =If(
+            drpPaginationSize.Selected.Value * varPageNumber <= CountRows(galHidden.AllItems),
+            Edit,
+            Disabled
+            )
+        Height: =83
+        Icon: =Icon.ArrowRight
+        OnSelect: =Set(varPageNumber,varPageNumber+1)
+        Width: =140
+        X: =421
+        Y: =1017
+        ZIndex: =8
+
+    iconLast As icon.ChevronRight:
+        DisplayMode: |-
+            =If(
+            drpPaginationSize.Selected.Value * varPageNumber <= CountRows(galHidden.AllItems),
+            Edit,
+            Disabled
+            )
+        Height: =43
+        Icon: =Icon.ChevronRight
+        OnSelect: |
+            =Set(varPageNumber, RoundUp( CountRows(galHidden.AllItems) / drpPaginationSize.SelectedText.Value ,0) )
+        Width: =48
+        X: =534
+        Y: =1037
+        ZIndex: =9
 

@@ -4,20 +4,28 @@
   "ControlUniqueIds": {
     "a0e0a51c-f721-41ea-8f87-6f979efe1ae9": 11,
     "App": 1,
-    "Canvas1": 6,
-    "DataCard1": 7,
-    "DataTable": 8,
+    "drpPaginationSize": 45,
     "f18cffb5-ac9e-4abb-8d68-69be94133bd5": 10,
+    "galHidden": 43,
+    "galleryTemplate3": 27,
+    "galleryTemplate4": 44,
+    "galMain": 26,
+    "iconFirst": 48,
+    "iconLast": 50,
+    "iconNext": 49,
+    "iconPrev": 47,
     "LblAppName1": 5,
+    "lblPageNumber": 46,
     "RectQuickActionBar1": 4,
     "Screen1": 3,
-    "Sender_Column": 9,
-    "Test_7F478737223C4B69": 2
+    "Separator": 42,
+    "Test_7F478737223C4B69": 2,
+    "Title": 40
   },
   "DoesTestStepsMetadataExist": true,
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "12/22/2022 17:40:40",
+  "HeaderLastSavedDateTimeUTC": "01/05/2023 18:01:30",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -30,42 +38,61 @@
     "Dataverse Emails": 4,
     "Dataverse Emails\\default.cds_hatuk_dataverseemail_views": 2,
     "Dataverse Emails\\hatuk_dataverseemail_statecode": 0,
-    "Dataverse Emails\\hatuk_dataverseemail_statuscode": 1
+    "Dataverse Emails\\hatuk_dataverseemail_statuscode": 1,
+    "DropDownSample": 5
   },
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {
-    "fluidGrid": 2,
+    "dropdown": 2,
+    "gallery": 3,
+    "icon": 4,
     "label": 1,
     "rectangle": 0
   },
   "OverridablePropertiesEntry": {
     "a0e0a51c-f721-41ea-8f87-6f979efe1ae9": {},
     "App": {},
-    "Canvas1": {},
-    "DataCard1": {},
-    "DataTable": {},
+    "drpPaginationSize": {},
     "f18cffb5-ac9e-4abb-8d68-69be94133bd5": {},
+    "galHidden": {},
+    "galleryTemplate3": {},
+    "galleryTemplate4": {},
+    "galMain": {},
+    "iconFirst": {},
+    "iconLast": {},
+    "iconNext": {},
+    "iconPrev": {},
     "LblAppName1": {},
+    "lblPageNumber": {},
     "RectQuickActionBar1": {},
     "Screen1": {},
-    "Sender_Column": {},
-    "Test_7F478737223C4B69": {}
+    "Separator": {},
+    "Test_7F478737223C4B69": {},
+    "Title": {}
   },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PublishOrderIndices": {
     "a0e0a51c-f721-41ea-8f87-6f979efe1ae9": 0,
     "App": 0,
-    "Canvas1": 2,
-    "DataCard1": 3,
-    "DataTable": 4,
+    "drpPaginationSize": 2,
     "f18cffb5-ac9e-4abb-8d68-69be94133bd5": 0,
+    "galHidden": 12,
+    "galleryTemplate3": 4,
+    "galleryTemplate4": 13,
+    "galMain": 3,
+    "iconFirst": 10,
+    "iconLast": 11,
+    "iconNext": 9,
+    "iconPrev": 8,
     "LblAppName1": 1,
+    "lblPageNumber": 7,
     "RectQuickActionBar1": 0,
     "Screen1": 0,
-    "Sender_Column": 5,
-    "Test_7F478737223C4B69": 0
+    "Separator": 6,
+    "Test_7F478737223C4B69": 0,
+    "Title": 5
   },
   "ResourcesJsonIndices": {
     "Image-SampleImage": 0
@@ -73,7 +100,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.1365693,
+    "AnalysisLoadTime": 0.1298132,
     "ControlCount": {
       "dataCard": 1,
       "dataTable": 1,
@@ -85,8 +112,8 @@
       "TestCase": 1,
       "TestSuite": 1
     },
-    "DeserializationLoadTime": 0.8907152,
-    "ErrorCount": 0
+    "DeserializationLoadTime": 1.1918173,
+    "ErrorCount": 3
   },
   "WasLocalDatabaseReferencesEmpty": false
 }
