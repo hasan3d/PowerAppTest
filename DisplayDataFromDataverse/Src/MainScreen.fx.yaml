@@ -1,4 +1,4 @@
-"Screen1 As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+"MainScreen As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
     OnVisible: =Set(varPageNumber,1)
 
     RectQuickActionBar1 As rectangle:
@@ -7,6 +7,7 @@
         ZIndex: =1
 
     "galMain As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
+        AccessibleLabel: ="Main Gallery"
         Height: =758
         Items: |-
             =If(
@@ -58,12 +59,13 @@
     LblAppName1 As label:
         Align: =Align.Center
         Height: =88
-        Size: =27
-        Text: ="Display Emails Demo"
+        Size: =23
+        Text: ="Display Emails From DataVerse Table Demo"
         Width: =Parent.Width
         ZIndex: =2
 
     galHidden As gallery.galleryVertical:
+        AccessibleLabel: ="Hidden Gallery"
         Height: =47
         Items: ='Dataverse Emails'
         Layout: =Layout.Vertical
@@ -75,6 +77,7 @@
         ZIndex: =3
 
     drpPaginationSize As dropdown:
+        AccessibleLabel: ="Dropdown Pagination Size"
         Height: =52
         Items: =[5,10]
         Size: =21
@@ -100,6 +103,7 @@
         ZIndex: =5
 
     iconPrev As icon.ArrowLeft:
+        AccessibleLabel: ="Previous Icon"
         DisplayMode: |-
             =If(
             varPageNumber = 1,
@@ -115,6 +119,7 @@
         ZIndex: =6
 
     iconFirst As icon.ChevronLeft:
+        AccessibleLabel: ="First Icon"
         DisplayMode: |-
             =If(
             varPageNumber = 1,
@@ -129,6 +134,7 @@
         ZIndex: =7
 
     iconNext As icon.ArrowRight:
+        AccessibleLabel: ="Next Icon"
         DisplayMode: |-
             =If(
             drpPaginationSize.Selected.Value * varPageNumber <= CountRows(galHidden.AllItems),
@@ -144,6 +150,7 @@
         ZIndex: =8
 
     iconLast As icon.ChevronRight:
+        AccessibleLabel: ="Last Icon"
         DisplayMode: |-
             =If(
             drpPaginationSize.Selected.Value * varPageNumber <= CountRows(galHidden.AllItems),

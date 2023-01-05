@@ -8,11 +8,11 @@
 
         Step1 As TestStep:
             Description: ="Assert(LblAppName1.Text = ""Display Emails Demo"")"
-            Screen: =Screen1
+            Screen: =MainScreen
             Value: =Assert(LblAppName1.Text = "Display Emails Demo", "Validate the text of the header for app name number 1 label.")
 
         Step2 As TestStep:
             Description: ="Assert(Sender_Column.FieldDisplayName = ""Email"")"
-            Screen: =Screen1
+            Screen: =MainScreen
             Value: =Assert(Sender_Column.FieldDisplayName = "Email", "Validate the display name of the sender email column name.")
 
