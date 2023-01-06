@@ -8,8 +8,8 @@
 
     "galMain As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
         AccessibleLabel: ="Main Gallery"
-        Height: =758
-        Items: |-
+        Height: =723
+        Items: |+
             =If(
             iconNext.DisplayMode = Disabled,
             // Handling last set of records
@@ -28,11 +28,12 @@
             drpPaginationSize.Selected.Value
             )
             )
+            
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: =Min(96, Self.Height - 60)
         Width: =625
-        Y: =214
+        Y: =249
         ZIndex: =1
 
         Title As label:
@@ -78,10 +79,11 @@
 
     drpPaginationSize As dropdown:
         AccessibleLabel: ="Dropdown Pagination Size"
-        Height: =52
+        Height: =61
         Items: =[5,10]
         Size: =21
-        Width: =178
+        Width: =122
+        X: =15
         Y: =114
         ZIndex: =4
 
@@ -165,4 +167,43 @@
         X: =534
         Y: =1037
         ZIndex: =9
+
+    Button1 As button:
+        DisplayMode: =DisplayMode.View
+        Height: =90
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Size: =24
+        Text: =""
+        Width: =320
+        X: =284
+        Y: =100
+        ZIndex: =10
+
+    txtSearch As text:
+        Default: ="Text input"
+        Height: =61
+        HoverBorderColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PaddingLeft: |
+            =40
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Size: =21
+        Width: =278
+        X: =303
+        Y: =114
+        ZIndex: =11
+
+    iconSearch As icon.Search:
+        Height: =28
+        Icon: =Icon.Search
+        Width: =45
+        X: =303
+        Y: =130
+        ZIndex: =12
 
