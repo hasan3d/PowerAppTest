@@ -35,28 +35,3 @@
             Screen: =MainScreen
             Value: =Select('galMain', 1, 'Title')
 
-        Step6 As TestStep:
-            Description: ="Select 'Title' in row 1 in 'galMain'"
-            Screen: =MainScreen
-            Value: =Select('galMain', 1, 'Title')
-
-        Step7 As TestStep:
-            Description: ="Select 'Title' in row 1 in 'galMain'"
-            Screen: =MainScreen
-            Value: =Select('galMain', 1, 'Title')
-
-        Step8 As TestStep:
-            Description: ="Select 'Title' in row 1 in 'galMain'"
-            Screen: =MainScreen
-            Value: =Select('galMain', 1, 'Title')
-
-        Step9 As TestStep:
-            Description: ="Select 'Title' in row 1 in 'galMain'"
-            Screen: =MainScreen
-            Value: =Select('galMain', 1, 'Title')
-
-        Step10 As TestStep:
-            Description: ="Set 'txtSearch'.Text to ""hasan.ahmed+1"""
-            Screen: =MainScreen
-            Value: =SetProperty('txtSearch'.Text, "hasan.ahmed+1")
-
