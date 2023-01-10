@@ -7,12 +7,56 @@
         DisplayName: ="Display Emails"
 
         Step1 As TestStep:
-            Description: ="Assert(LblAppName1.Text = ""Display Emails Demo"")"
+            Description: ="Select 'drpPaginationSize'"
             Screen: =MainScreen
-            Value: =Assert(LblAppName1.Text = "Display Emails Demo", "Validate the text of the header for app name number 1 label.")
+            Value: =Select('drpPaginationSize')
 
         Step2 As TestStep:
-            Description: ="Assert(Sender_Column.FieldDisplayName = ""Email"")"
+            Description: |-
+                ="Set 'drpPaginationSize'.Selected to {'Value':""10""}"
             Screen: =MainScreen
-            Value: =Assert(Sender_Column.FieldDisplayName = "Email", "Validate the display name of the sender email column name.")
+            Value: |-
+                =SetProperty('drpPaginationSize'.Selected, {'Value':"10"})
+
+        Step3 As TestStep:
+            Description: |-
+                ="Set 'drpPaginationSize'.Selected to {'Value':""5""}"
+            Screen: =MainScreen
+            Value: |-
+                =SetProperty('drpPaginationSize'.Selected, {'Value':"5"})
+
+        Step4 As TestStep:
+            Description: ="Select 'txtSearch'"
+            Screen: =MainScreen
+            Value: =Select('txtSearch')
+
+        Step5 As TestStep:
+            Description: ="Select 'Title' in row 1 in 'galMain'"
+            Screen: =MainScreen
+            Value: =Select('galMain', 1, 'Title')
+
+        Step6 As TestStep:
+            Description: ="Select 'Title' in row 1 in 'galMain'"
+            Screen: =MainScreen
+            Value: =Select('galMain', 1, 'Title')
+
+        Step7 As TestStep:
+            Description: ="Select 'Title' in row 1 in 'galMain'"
+            Screen: =MainScreen
+            Value: =Select('galMain', 1, 'Title')
+
+        Step8 As TestStep:
+            Description: ="Select 'Title' in row 1 in 'galMain'"
+            Screen: =MainScreen
+            Value: =Select('galMain', 1, 'Title')
+
+        Step9 As TestStep:
+            Description: ="Select 'Title' in row 1 in 'galMain'"
+            Screen: =MainScreen
+            Value: =Select('galMain', 1, 'Title')
+
+        Step10 As TestStep:
+            Description: ="Set 'txtSearch'.Text to ""hasan.ahmed+1"""
+            Screen: =MainScreen
+            Value: =SetProperty('txtSearch'.Text, "hasan.ahmed+1")
 

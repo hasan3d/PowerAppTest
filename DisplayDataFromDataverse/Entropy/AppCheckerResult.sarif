@@ -14,124 +14,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Test_7F478737223C4B69.'f18cffb5-ac9e-4abb-8d68-69be94133bd5'.'a0e0a51c-f721-41ea-8f87-6f979efe1ae9'.Step2"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Test_7F478737223C4B69.'f18cffb5-ac9e-4abb-8d68-69be94133bd5'.'a0e0a51c-f721-41ea-8f87-6f979efe1ae9'.Step2",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 7,
-                  "snippet": {
-                    "text": "Sender_Column"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Step2",
-                "module": "Test_7F478737223C4B69",
-                "type": "Test_7F478737223C4B69.'f18cffb5-ac9e-4abb-8d68-69be94133bd5'.'a0e0a51c-f721-41ea-8f87-6f979efe1ae9'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Sender_Column"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Test_7F478737223C4B69.'f18cffb5-ac9e-4abb-8d68-69be94133bd5'.'a0e0a51c-f721-41ea-8f87-6f979efe1ae9'.Step2"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Test_7F478737223C4B69.'f18cffb5-ac9e-4abb-8d68-69be94133bd5'.'a0e0a51c-f721-41ea-8f87-6f979efe1ae9'.Step2",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 17,
-                  "charOffset": 20,
-                  "snippet": {
-                    "text": ".FieldDisplayName"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Step2",
-                "module": "Test_7F478737223C4B69",
-                "type": "Test_7F478737223C4B69.'f18cffb5-ac9e-4abb-8d68-69be94133bd5'.'a0e0a51c-f721-41ea-8f87-6f979efe1ae9'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Test_7F478737223C4B69.'f18cffb5-ac9e-4abb-8d68-69be94133bd5'.'a0e0a51c-f721-41ea-8f87-6f979efe1ae9'.Step2"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Test_7F478737223C4B69.'f18cffb5-ac9e-4abb-8d68-69be94133bd5'.'a0e0a51c-f721-41ea-8f87-6f979efe1ae9'.Step2",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 38,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "Step2",
-                "module": "Test_7F478737223C4B69",
-                "type": "Test_7F478737223C4B69.'f18cffb5-ac9e-4abb-8d68-69be94133bd5'.'a0e0a51c-f721-41ea-8f87-6f979efe1ae9'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "MainScreen.txtSearch.AccessibleLabel"
                 }
               ],
@@ -155,7 +37,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -185,7 +67,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -215,7 +97,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -245,7 +127,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -275,7 +157,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -305,7 +187,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -335,7 +217,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
+          "ruleIndex": 1
         }
       ],
       "tool": {
@@ -343,55 +225,6 @@
           "fullName": "PowerApps app checker",
           "name": "PowerApps app checker",
           "rules": [
-            {
-              "id": "app-ErrInvalidName",
-              "messageStrings": {
-                "issue": {
-                  "text": "Name isn't valid. '{0}' isn't recognized."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Remove or correct the reference to the name that isn't valid."
-                ],
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrInvalidDot",
-              "messageStrings": {
-                "issue": {
-                  "text": "Invalid use of '.'"
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrIncompatibleTypesForEquality-Left-Right",
-              "messageStrings": {
-                "issue": {
-                  "text": "Incompatible types for comparison. These types can't be compared: {0}, {1}."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "You might need to convert the value to be the same type, such as converting a date string (e.g., \"12/31/2018\") to a date value.",
-                  "If you’re comparing records or tables, the field or column types must match exactly."
-                ],
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
             {
               "id": "acc-AccessibleLabelNeeded",
               "messageStrings": {

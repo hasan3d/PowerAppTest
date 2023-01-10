@@ -28,7 +28,7 @@
   "DoesTestStepsMetadataExist": true,
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "01/10/2023 12:04:20",
+  "HeaderLastSavedDateTimeUTC": "01/10/2023 12:12:15",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -126,7 +126,7 @@
       "text": 1
     },
     "DeserializationLoadTime": 4.4949235,
-    "ErrorCount": 3
+    "ErrorCount": 0
   },
   "WasLocalDatabaseReferencesEmpty": false
 }
