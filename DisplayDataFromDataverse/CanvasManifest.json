@@ -97,11 +97,11 @@
     "FileID": "97d129e0-9e20-4b07-9e2b-e228d00f46b0",
     "Id": "97d129e0-9e20-4b07-9e2b-e228d00f46b0",
     "InstrumentationKey": "",
-    "Name": "Display data from Dataverse",
+    "Name": "Add search functionality",
     "OriginatingVersion": "1.326"
   },
   "PublishInfo": {
-    "AppName": "Display data from Dataverse",
+    "AppName": "Add search functionality",
     "BackgroundColor": "RGBA(0,176,240,1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "Edit",

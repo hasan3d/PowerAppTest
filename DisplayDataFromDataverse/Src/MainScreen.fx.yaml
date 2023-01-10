@@ -9,9 +9,10 @@
     "galMain As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
         AccessibleLabel: ="Main Gallery"
         Height: =723
-        Items: |+
+        Items: |-
             =If(
             iconNext.DisplayMode = Disabled,
+            
             // Handling last set of records
             LastN(
             FirstN(
@@ -28,7 +29,6 @@
             drpPaginationSize.Selected.Value
             )
             )
-            
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: =Min(96, Self.Height - 60)
@@ -67,8 +67,13 @@
 
     galHidden As gallery.galleryVertical:
         AccessibleLabel: ="Hidden Gallery"
+        Default: |-
+            =If(
+              drpPaginationSize.Selected.Value * varPageNumber >= CountRows(Self.AllItems),
+              Last(Self.AllItems)
+            )
         Height: =47
-        Items: ='Dataverse Emails'
+        Items: =If(txtSearch.Text = "", 'Dataverse Emails', Filter('Dataverse Emails', StartsWith(Sender, txtSearch.Text)))
         Layout: =Layout.Vertical
         TemplateSize: =106
         Visible: =false
@@ -183,7 +188,7 @@
         ZIndex: =10
 
     txtSearch As text:
-        Default: ="Text input"
+        Default: =
         Height: =61
         HoverBorderColor: =RGBA(255, 255, 255, 1)
         HoverFill: =RGBA(255, 255, 255, 1)
